@@ -17,6 +17,12 @@ sr_NUM = Series["Values"].mean()
 variant = Series["Values"].var(ddof=1)
 sr = math.sqrt(variant)
 
+print(f"Минимальное значение: {min_num}")
+print(f"Повторки: {duplicate}")
+print(f"Максимальное значение: {maxx_num}")
+print(f"Сумма всех чисел: {summ}")
+print(f"Среднеквадратическое отклонение: {sr:.4f}")
+
 with open("данные.txt", "w", encoding="utf-8") as dann:
     dann.write(f"Минимальное значение: {min_num}\n")
     dann.write(f"Повторки: {duplicate}\n")
